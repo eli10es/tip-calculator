@@ -2,17 +2,43 @@
   <div class="section-items">
     <div class="labels">
       <div class="label">
-        <label for="price">Price:</label>
-        <input class="input" type="text" id="price" name="price" />
+        <label for="amount">Amount:</label>
+        <input
+          ngModel
+          class="input"
+          type="text"
+          id="amount"
+          name="amount"
+          #amount
+          required
+        />
       </div>
       <div class="label">
         <label for="percentage">Percentage</label>
-        <input class="input" type="text" id="percentage" name="percentage" />
+        <input
+          ngModel
+          class="input"
+          type="text"
+          id="percentage"
+          name="percentage"
+          #percentage
+          required
+        />
       </div>
     </div>
     <div class="buttons">
-      <button class="btnCalculate" (click)="calculateTip()">Calculate</button>
-      <button class="btnClear">Clear</button>
+      <button
+        class="btnCalculate"
+        (click)="calculateTip(amount.value, percentage.value)"
+      >
+        Calculate
+      </button>
+      <button class="btnClear" (click)="clear()">Clear</button>
     </div>
+    @if(tip){
+    <div class="tip">
+      <h1>Your desired tip is: {{ tip }} $</h1>
+    </div>
+    }
   </div>
 </div>
