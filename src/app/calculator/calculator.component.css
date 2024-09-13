@@ -1,0 +1,53 @@
+.labels div {
+  display: block;
+  margin: 1rem;
+  /* background-color: #4c6a4d; */
+  width: fit-content;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  font-size: 2rem;
+}
+
+.input {
+  margin: 10px;
+  background-color: #4c6a4d;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 2rem;
+}
+
+.buttons button {
+  margin: 1rem;
+}
+
+.btnCalculate {
+  background-color: #4c6a4d;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+.btnCalculate:hover {
+  color: #4c6a4d;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btnClear {
+  background-color: #4c6a4d;
+  border-radius: 10px;
+  font-size: 2rem;
+  color: white;
+}
+
+.btnClear:hover {
+  color: #4c6a4d;
+  background-color: white;
+  cursor: pointer;
+}
+
+.section-items {
+  background-color: #8e9b6a;
+  border-radius: 1rem;
+}

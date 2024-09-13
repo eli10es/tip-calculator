@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './calculator.component.html',
-  styleUrl: './calculator.component.css'
+  styleUrl: './calculator.component.css',
 })
 export class CalculatorComponent {
-
+  calculateTip() {}
 }
